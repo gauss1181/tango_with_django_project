@@ -14,7 +14,7 @@
     {% if categories %}
       <ul>
         {% for category in categories %}
-	<li>{{ category.name }}</li>
+	<li>{{ category.name }} (by {{ user.username }})</li>
 	{% endfor %}
       </ul>
     {% else %}
